@@ -129,13 +129,66 @@ After doing this, you may fix the identity used for this commit with:
 
 
 ## terminal command
-``mkdir learnGit``  
-``ls``, ``ls -ah``  
-``cat readme.txt``  
-查看当前文件内容  
+``mkdir learnGit`` make directory新建一个目录
+  
+``cat readme.txt`` 查看当前文件内容  
+
 ``vi readme.txt`` --> press ``esc`` --> enter ``:wq`` --> press ``回车``  
-创建文件  
-``vim readme.txt``  
-修改这个文件  
-``rm readme.txt``  
-删除这个文件
+创建文件
+
+
+`pwd` print working directory显示当前命令所处于的位置.  
+
+`ls` list查看目录下的内容  
+加入参数:  
+1. `ls -l`: 目录下内容的详细信息
+2. `ls -la`: 查询子文件 .表示文件夹内的隐藏文件
+3. `ls -ah`: 文件夹中的隐藏文件
+
+`cd` change directory进入一个指定的目录
+1. …/表示上一层目录
+2. ./表示当前的目录
+3. 文件夹的结尾需要/
+4. 可以用Tab完成文件名的补全
+    
+`mv` move重命名或者移动文件/目录
+（重命名 mv name change_name)
+（移动 mv file floder/)
+    
+`cp` copy复制文件/目录
+（复制文件夹时，需要增加参数-R 其实质上是进行了递归的操作）
+（cp -R floder change_floder)
+    
+``rm readme.txt`` remove删除文件/目录
+（rm -f 无条件删除）
+（rm -R删除文件夹）
+（rm -fR无条件删除文件夹）
+（rm -fR *删除当前文件夹的所有内容）
+    
+`du -sh` disk usage查看文件/目录的大小
+
+`man` manual pages查看命令的帮助信息
+    
+`touch` 创建文件
+（word .docx）
+（文本编辑 .tex）
+（需要设置创建文件的格式）
+    
+`open` 打开文件
+    
+`vim readme.txt` 打开/编辑文本文件
+    
+`find` 查找文件
+（正则表达式）
+（*为通配符 代表任意的字符）
+（-name 以名称的形式去搜索）
+（目录的路径需要加上/ 以/结尾）
+    
+`file` 查看文件的类型
+    
+`cd ～` 快速进入用户的主文件夹目录
+（～代表用户主文件夹目录）
+
+control+C 中断命令的进行<br>
+control+A 光标回到行头<br>
+control+E 光标回到行尾<br>
